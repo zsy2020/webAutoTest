@@ -22,7 +22,7 @@ from page.baidu_page import BaiduPage
      ],
     ids=["case1", "case2", "case3"]
 )
-def test_baidu_search(self, name, search_key, browser, base_url):
+def test_baidu_search1(name, search_key, browser, base_url):
     page = BaiduPage(browser)
     page.get(base_url)
     page.search_input = search_key
@@ -49,7 +49,7 @@ def get_data(file_path):
     "name, search_key",
     get_data(base_path + "/test_dir/data/data_file.json")
 )
-def test_baidu_search(name, search_key, browser, base_url):
+def test_baidu_search2(name, search_key, browser, base_url):
     page = BaiduPage(browser)
     page.get(base_url)
     page.search_input = search_key
